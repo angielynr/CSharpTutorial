@@ -14,7 +14,7 @@ namespace Repetition_Statements.For_Loop
             Console.WriteLine("Enter 0 to exit");
 
 
-            for (string userInput = ""; userInput != "0"; userInput = Console.ReadLine())
+            for (string? userInput = ""; userInput != "0"; userInput = Console.ReadLine())
             {
                 Console.WriteLine("Enter value (0 to exit)");
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public class OctagonInterface : IRegularPolygon
+    public class OctagonInterface : ISpecialPolygon, IGetArea
     {
 
         public int NumberOfSides { get; set; }
@@ -18,16 +18,15 @@ namespace Interfaces
             SideLength = length;
         }
 
-        public double GetArea()
-        {
-            return SideLength * SideLength * (2 + 2 * Math.Sqrt(2));
-        }
-
         public double GetPerimeter()
         {
             return NumberOfSides * SideLength;
         }
 
+        public double GetArea()
+        {
+            return SideLength * SideLength;
+        }
     }
 
 }

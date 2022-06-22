@@ -13,7 +13,7 @@ namespace Delegates.Demo
 
             CalculateAndPrint(6, 5, Add);
             CalculateAndPrint(6, 5, Subtract);
-            CalculateAndPrint(6, 0, Divide);
+            CalculateAndPrint(6, 5, Divide);
             CalculateAndPrint(6, 2, Multiply);
 
             CalculateAndPrint(6, 9, delegate (int x, int y) { return x + y; });
